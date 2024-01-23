@@ -1,0 +1,7 @@
+LIBRARY
+
+HEAPSIZE  1024
+EXPORTS
+   WEP                  @1
+   SetupDlabDLL
+   FinishDlabDLL
