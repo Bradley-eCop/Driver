@@ -1,0 +1,17 @@
+#ifndef QUESTFIT_ERROR_H
+#define QUESTFIT_ERROR_H
+
+typedef enum
+{
+    QFE_OK =0,
+    QFE_TIMEOUT,
+    QFE_NOT_CONNECTED,
+    QFE_INVALID_LEN,
+    QFE_FILE_NOT_FOUND,
+    QFE_NOT_ENOUGH_DATA,
+    QFE_FILE_TOO_LONG,
+} QuestFitError_e;
+
+
+
+#endif //QUESTFIT_ERROR_H

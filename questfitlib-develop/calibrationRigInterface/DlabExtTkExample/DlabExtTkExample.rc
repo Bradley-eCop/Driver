@@ -1,0 +1,269 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "const.h"
+#include "DlabExtTkExample.h"
+#include "generat.h"
+#include "QuestFitRawData.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GENERATOR               BITMAP                  "EV_SNONE.BMP"
+EV_GENERATOR            BITMAP                  "EV_GEN.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ICO_LAMPE               ICON                    "STATUS.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+EXTTK_MENU MENU
+BEGIN
+    POPUP "&New"
+    BEGIN
+        MENUITEM "&Global Setup",               MN_EXTTK_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "New: &Generator",             MN_MODUL_GENERATOR
+        MENUITEM SEPARATOR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+GENERATOR DIALOGEX 10, 23, 361, 234
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Generator Setup"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Module Name:",-1,10,16,50,8
+    EDITTEXT        IDD_MODUL_NAME,80,14,89,12,ES_AUTOHSCROLL
+    LTEXT           "Description:",-1,189,16,45,8
+    EDITTEXT        IDD_MODUL_BEZEICHNUNG,247,14,95,12,ES_AUTOHSCROLL
+    GROUPBOX        " Global Synchronization ",-1,5,35,351,30
+    LTEXT           "Time Base:",-1,10,48,40,10
+    COMBOBOX        IDD_GEN_TIMEBASE,80,46,265,89,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "0",IDD_NUM00,51,73,15,8
+    CTEXT           "1",IDD_NUM01,67,73,15,8
+    CTEXT           "2",IDD_NUM02,83,73,15,8
+    CTEXT           "3",IDD_NUM03,99,73,15,8
+    CTEXT           "4",IDD_NUM04,115,73,15,8
+    CTEXT           "5",IDD_NUM05,131,73,15,8
+    CTEXT           "6",IDD_NUM06,147,73,15,8
+    CTEXT           "7",IDD_NUM07,163,73,15,8
+    CTEXT           "8",IDD_NUM08,179,73,15,8
+    CTEXT           "9",IDD_NUM09,195,73,15,8
+    CTEXT           "10",IDD_NUM10,211,73,15,8
+    CTEXT           "11",IDD_NUM11,227,73,15,8
+    CTEXT           "12",IDD_NUM12,243,73,15,8
+    CTEXT           "13",IDD_NUM13,259,73,15,8
+    CONTROL         "",IDD_KAN00,"EVA:CONTROLKANAL",0x0,53,83,11,15
+    CONTROL         "",IDD_KAN01,"EVA:CONTROLKANAL",0x0,69,83,11,15
+    CONTROL         "",IDD_KAN02,"EVA:CONTROLKANAL",0x0,85,83,11,15
+    CONTROL         "",IDD_KAN03,"EVA:CONTROLKANAL",0x0,101,83,11,15
+    CONTROL         "",IDD_KAN04,"EVA:CONTROLKANAL",0x0,117,83,11,15
+    CONTROL         "",IDD_KAN05,"EVA:CONTROLKANAL",0x0,133,83,11,15
+    CONTROL         "",IDD_KAN06,"EVA:CONTROLKANAL",0x0,149,83,11,15
+    CONTROL         "",IDD_KAN07,"EVA:CONTROLKANAL",0x0,165,83,11,15
+    CONTROL         "",IDD_KAN08,"EVA:CONTROLKANAL",0x0,181,83,11,15
+    CONTROL         "",IDD_KAN09,"EVA:CONTROLKANAL",0x0,197,83,11,15
+    CONTROL         "",IDD_KAN10,"EVA:CONTROLKANAL",0x0,213,83,11,15
+    CONTROL         "",IDD_KAN11,"EVA:CONTROLKANAL",0x0,229,83,11,15
+    CONTROL         "",IDD_KAN12,"EVA:CONTROLKANAL",0x0,245,83,11,15
+    CONTROL         "",IDD_KAN13,"EVA:CONTROLKANAL",0x0,261,83,11,15
+    LTEXT           "Channel Name:",-1,10,116,50,8
+    EDITTEXT        IDD_KANAL_NAME,75,118,211,12,ES_AUTOHSCROLL
+    GROUPBOX        " Parameters ",-1,5,162,146,65,WS_GROUP
+    LTEXT           "mV / V::",-1,10,192,72,8
+    EDITTEXT        IDD_GEN_AMPL,85,190,58,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Ok",IDOK,306,119,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,306,138,50,14
+    PUSHBUTTON      "Help",IDHELP,306,159,50,14
+    GROUPBOX        "",-1,5,6,172,25
+    GROUPBOX        "",-1,185,6,171,25
+    GROUPBOX        "",-1,5,66,351,41
+    GROUPBOX        "",-1,5,108,292,41
+END
+
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""const.h""\r\n"
+    "#include ""DlabExtTkExample.h""\r\n"
+    "#include ""deriv.h""\r\n"
+    "#include ""lamp.h""\r\n"
+    "#include ""generat.h""\r\n"
+    "#include ""dmd_trig.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "GENERATOR_ICO           BITMAP  MOVEABLE PURE   ""24_INONE.BMP""\r\n"
+    "LAMPE_ICO               BITMAP  MOVEABLE PURE   ""24_INONE.BMP""\r\n"
+    "DMDTRIG_ICO             BITMAP  MOVEABLE PURE   ""24_INONE.BMP""\r\n"
+    "DERIVATION_ICO BITMAP  MOVEABLE PURE   ""24_INONE.BMP""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    "LAMP", DIALOG
+    BEGIN
+        RIGHTMARGIN, 356
+        BOTTOMMARGIN, 179
+    END
+
+    "LAMP_COL", DIALOG
+    BEGIN
+    END
+
+    "LAMP_OPT", DIALOG
+    BEGIN
+        RIGHTMARGIN, 290
+        BOTTOMMARGIN, 70
+    END
+
+    "LAMP_FONTS", DIALOG
+    BEGIN
+    END
+
+    "GENERATOR", DIALOG
+    BEGIN
+        RIGHTMARGIN, 356
+        BOTTOMMARGIN, 233
+    END
+
+    "DEMAND_TRIGGER", DIALOG
+    BEGIN
+        RIGHTMARGIN, 353
+        BOTTOMMARGIN, 158
+    END
+
+    "DERIVATION", DIALOG
+    BEGIN
+        RIGHTMARGIN, 356
+        BOTTOMMARGIN, 158
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    MN_MODUL_LAMP           "Status lamp"
+    MN_MODUL_GENERATOR      "QuestFit Raw Data"
+    MN_MODUL_DEMAND_TRIG    "Demand trigger"
+    MN_MODUL_DERIVATION     "Derivation"
+END
+
+STRINGTABLE
+BEGIN
+    MN_STATUS_LAMP          "Display TTL on/off"
+    MN_STATUS_GENERATOR     "Generator"
+END
+
+STRINGTABLE
+BEGIN
+    ID_HARDHILFE            "EVDHDAP.HLP"
+    ID_EVAHILFE             "DLDDAPDL.HLP"
+END
+
+
+STRINGTABLE
+BEGIN
+    STR_GENU_FAST           "At least one of the Channels of this Generator is sampled too quickly"
+    STR_ACTION_SET_FREQ     "Set Frequency"
+    STR_FREQUENZ            "Frequency"
+    STR_ACTION_SET_AMPLITUDE "Set Amplitude"
+    STR_AMPLITUDE           "Amplitude"
+END
+
+STRINGTABLE
+BEGIN
+    MN_STATUS_DEMAND_TRIG   "Trigger on Demand"
+    MN_STATUS_DERIVATION    "Derivation/Integration of signals"
+END
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+GENERATOR_ICO           BITMAP  MOVEABLE PURE   "24_INONE.BMP"
+LAMPE_ICO               BITMAP  MOVEABLE PURE   "24_INONE.BMP"
+DMDTRIG_ICO             BITMAP  MOVEABLE PURE   "24_INONE.BMP"
+DERIVATION_ICO BITMAP  MOVEABLE PURE   "24_INONE.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
