@@ -1,0 +1,11 @@
+doc/
+build/
+build32/
+bin/
+build64
+calibrationRigInterface/DlabExtTkExample/OBJ32/
+calibrationRigInterface/DlabExtTkExample/.vs/DlabExtTkExample/v16/Browse.VC.db
+calibrationRigInterface/DlabExtTkExample/.vs/DlabExtTkExample/v16/.suo
+calibrationRigInterface/DlabExtTkExample/DlabExtTkExample.aps
+calibrationRigInterface/DlabExtTkExample/.vs/DlabExtTkExample/v16/ipch/AutoPCH/291c30bfa32095f0/DLABEXTTKEXAMPLE.ipch
+calibrationRigInterface/DlabExtTkExample/.vs/DlabExtTkExample/v16/ipch/AutoPCH/9d0c8c9e6655bf3/GENERAT.ipch
